@@ -1,0 +1,40 @@
+version: '3.7'
+services:
+  app_v1:
+    image: sample_flask:v1
+    ports: 
+      - "5005:5000"
+    environment:
+      - APP_VERSION=appv1
+    networks:
+      - Thuo
+
+  app_v2:
+    image: sample_flask:v1
+    ports: 
+      - "5010:5000"
+    environment:
+      - APP_VERSION=appv2
+    networks:
+      - Thuo
+
+  app_v3:
+    image: sample_flask:v1
+    ports: 
+      - "5020:5000"
+    environment:
+      - APP_VERSION=appv3
+    networks:
+      - Thuo
+
+  app_v4:
+    image: sample_flask:v1
+    ports: 
+      - "5030:5000"
+    environment:
+      - APP_VERSION=appv4
+    networks:
+      - Thuo 
+
+networks:
+  Thuo:
