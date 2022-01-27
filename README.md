@@ -1,6 +1,6 @@
 # FLASKAPP
 
-This is a test application for looking at covid spread in a workplace
+This is a test application for learning flask, docker and docker compose
 
 ## Run It 
 
