@@ -7,7 +7,10 @@ COPY . ./
 RUN pip install -r requirements.txt
 #dependencies of application
 
+ENV APP_VERSION=""
+
 EXPOSE 5000
+
 # Make the gunicorn command script executable by the user/owner.
 RUN chmod +x gunicorn_starter.sh
 
