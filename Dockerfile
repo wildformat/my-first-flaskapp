@@ -1,5 +1,6 @@
 FROM python:3.8.9-slim
 # basis for our python env and its a debian OS
+RUN apt update && apt install libpq-dev  gcc -y
 WORKDIR /app
 #sets where application will run
 COPY . ./ 
